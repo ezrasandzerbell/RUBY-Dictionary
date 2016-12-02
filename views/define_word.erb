@@ -5,6 +5,21 @@
     <label for="definition_entry"><h3>Create a definition for "<%= @word.get_word() %>"</h3></label>
     <br>
     <input type="text" name="definition_entry">
+    <br>
+    <label for="part_of_speech"><h3>Part of Speech</h3></label>
+
+    <select class="form-control resize_menu" name="part_of_speech" id="part_of_speech">
+      <option value="Noun">Noun</option>
+      <option value="Verb">Verb</option>
+      <option value="Adjective">Adjective</option>
+      <option value="Adverb">Adverb</option>
+      <option value="Pronoun">Pronoun</option>
+      <option value="Preposition">Preposition</option>
+      <option value="Conjunction">Conjunction</option>
+      <option value="Interjection">Interjection</option>
+      <option value="Determiner">Determiner</option>
+    </select>
+    <br>
     <button type="submit" class="btn btn-primary">Submit Word Definition</button>
   </div>
 </form>

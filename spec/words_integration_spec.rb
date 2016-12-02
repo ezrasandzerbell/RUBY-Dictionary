@@ -52,4 +52,15 @@ describe('takes user to target route', {:type => :feature}) do
     click_link('Assign a new definition')
     expect(page).to have_content('Word Definition Form')
   end
+  it('clicks the word-link and brings user to definition page') do
+    fill_in('word_entry', :with => "satisfying")
+    click_button("Submit Word")
+    expect(page).to have_content('satisfying')
+    click_link("satisfying")
+    expect(page).to have_content('Definitions for the')
+    click_link('Assign a new definition')
+    expect(page).to have_content('Word Definition Form')
+    click_button('Submit Word Definition')
+    expect(page).to have_content('Noun')
+  end
 end

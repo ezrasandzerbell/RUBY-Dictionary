@@ -4,7 +4,7 @@
   </div>
   <div class="panel panel-body">
     <% @word.definitions.each do |definition| %>
-    <li class="link_font"><%= definition.word %></li>
+    <li class="link_font"><%= definition.pos %>: <%= definition.word %></li>
     <br>
     <% end %>
     </ul>
