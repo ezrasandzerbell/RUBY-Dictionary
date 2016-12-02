@@ -15,3 +15,8 @@ post('/word_input') do
   @words = Word.all()
   erb(:word_list)
 end
+
+get('/word_definitions/:id') do
+  @word = Word.find(params.fetch('id'))
+  erb(:word_definitions)
+end

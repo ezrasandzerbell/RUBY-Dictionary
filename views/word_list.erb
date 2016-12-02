@@ -1,4 +1,4 @@
 <% @words.each do |word| %>
-<%= word.get_word %>
+<a href="/word_definitions/<%= word.id %>"><%= word.get_word %></a>
 <br>
 <% end %>

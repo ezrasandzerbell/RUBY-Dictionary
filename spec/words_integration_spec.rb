@@ -14,4 +14,11 @@ describe('takes user to target route', {:type => :feature}) do
     click_button("Submit Word")
     expect(page).to have_content('dog')
   end
+  it('clicks the word-link and brings user to definition page') do
+    fill_in('word_entry', :with => "cat")
+    click_button("Submit Word")
+    expect(page).to have_content('cat')
+    click_link("cat")
+    expect(page).to have_content('cat')
+  end
 end
