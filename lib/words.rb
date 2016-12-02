@@ -6,7 +6,13 @@ class Word
   define_method(:save) do
     @@all_words.push(self)
   end
-  define_method(:all) do
+  define_singleton_method(:all) do
     @@all_words
+  end
+  define_method(:get_word) do
+    @word
+  end
+  define_singleton_method(:clear) do
+    @@all_words = []
   end
 end
