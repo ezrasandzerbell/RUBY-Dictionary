@@ -29,3 +29,15 @@ get('/word_list') do
   @words = Word.all
   erb(:word_list)
 end
+
+get('/word_definitions/:id/definition_form') do
+  @word = Word.find(params.fetch('id'))
+  erb(:define_word)
+end
+
+post('/word_definitions/:id/define_word') do
+  @word = Word.find(params.fetch('id'))
+  definition = Definition.new(params.fetch('definition_entry'))
+  @word.save_definition(definition)
+  erb(:word_definitions)
+end

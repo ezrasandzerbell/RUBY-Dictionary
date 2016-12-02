@@ -1,0 +1,12 @@
+<h2>Word Definition Form</h2>
+
+<h3>Create a definition for <%= @word.get_word() %></h3>
+
+<form action="/word_definitions/<%= @word.id() %>/define_word" method="post">
+  <div class="form-group">
+    <label for="definition_entry">Enter your first word to get started:</label>
+    <br>
+    <input type="text" name="definition_entry">
+    <button type="submit" class="btn btn-primary">Submit Word Definition</button>
+  </div>
+</form>

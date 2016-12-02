@@ -1,4 +1,12 @@
 <h2>Definitions for the word <%= @word.get_word %></h2>
 
+<% @word.definitions.each do |definition| %>
+<%= definition.word %>
+<br>
+<% end %>
+
+<a href="/word_definitions/<%= @word.id %>/definition_form">Assign a definition</a>
+<br>
 <a href="/word_list">Back to word list</a>
+<br>
 <a href="/word_form">Create new word</a>
