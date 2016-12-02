@@ -6,6 +6,8 @@
 
 ## Specifications
 
+* https://mighty-cliffs-95819.herokuapp.com/
+
 #### 1. Adds Words as Class object
 * _Receives a word_
 
@@ -15,7 +17,8 @@
 
 ## Setup/Installation Requirements
 
-_Works in any web browser. To run Contacts Storage Application, in command line run:_
+_Visit this link to run the app: https://mighty-cliffs-95819.herokuapp.com/_
+_Works in any web browser._
 
 ```
 $ git clone https://github.com/weitzwoman/contacts_ruby
@@ -35,7 +38,7 @@ _Contact me at equilibriumarts@gmail.com_
 * _Bootstrap_
 * _Ruby_
 * _Sinatra_
-
+* _Heroku_
 
 ### License
 
