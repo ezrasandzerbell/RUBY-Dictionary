@@ -1,12 +1,18 @@
-<h2>Definitions for the word <%= @word.get_word %></h2>
+<div class="panel panel-warning">
+  <div class="panel panel-heading">
+    <h2><center>Definitions for the word <%= @word.get_word %></center></h2>
+  </div>
+  <div class="panel panel-body">
+    <% @word.definitions.each do |definition| %>
+    <li class="link_font"><%= definition.word %></li>
+    <br>
+    <% end %>
+    </ul>
+  </div>
 
-<% @word.definitions.each do |definition| %>
-<%= definition.word %>
-<br>
-<% end %>
+  <div class="panel panel-footer link_font">
+    <center><a href="/word_definitions/<%= @word.id %>/definition_form">Assign a new definition</a></span> |
+    <a href="/word_list">Back to word list</a></center>
+  </div>
 
-<a href="/word_definitions/<%= @word.id %>/definition_form">Assign a definition</a>
-<br>
-<a href="/word_list">Back to word list</a>
-<br>
-<a href="/word_form">Create new word</a>
+</div>

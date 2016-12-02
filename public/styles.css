@@ -1,0 +1,53 @@
+.link_font {
+  font-size: 20px;
+}
+
+.center {
+  margin-left: 35%;
+}
+
+.center_definitions {
+  margin-left: 20%;
+}
+
+.center_word_list {
+  margin-left: 14%;
+}
+
+.center_form_input {
+  margin-left: 7%;
+  margin-top: 20px;
+}
+
+#center_index_img {
+  margin-top: 25px;
+  margin-bottom: 25px;
+  margin-left: 5%;
+}
+
+.center_text_slightly {
+  margin-left: 5%;
+}
+
+body {
+  background-color: lightyellow;
+}
+
+.jumbotron {
+  background-color: #FFDA97;
+  text-align: center;
+}
+
+#form_icon_format {
+  width: 150px;
+  margin-top: 20px;
+  margin-left: 16%;
+  margin-bottom: 15px;
+}
+
+.form_icon_format2 {
+  width: 200px;
+  margin-top: 20px;
+  margin-left: 15%;
+  margin-bottom: 15px;
+}

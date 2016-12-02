@@ -1,10 +1,16 @@
-<h2>Word Dictionary Form</h2>
+<div class="center">
+  <h1>Word Dictionary Form</h1>
+  <form action="/word_input" method="post">
+    <div class="form-group">
+      <label for="word_entry" class="link_font"> &nbsp; &nbsp; Enter your a word to get started:</label>
+      <br>
+      <img src="../img/form_icon.png" alt="form icon" id="form_icon_format"/>
+      <br>
+      <div class="center_form_input">
+        <input type="text" name="word_entry">
+        <button type="submit" class="btn btn-primary">Submit Word</button>
+      </div>
+    </div>
+  </form>
 
-<form action="/word_input" method="post">
-  <div class="form-group">
-    <label for="word_entry">Enter your first word to get started:</label>
-    <br>
-    <input type="text" name="word_entry">
-    <button type="submit" class="btn btn-primary">Submit Word</button>
-  </div>
-</form>
+</div>

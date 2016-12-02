@@ -8,7 +8,7 @@ set(:show_exceptions, false)
 describe('takes user to target route', {:type => :feature}) do
   before() do
     visit('/')
-    click_link('Click here to get started')
+    click_link('index_image')
   end
   it('tests click link to get started') do
     expect(page).to have_content('Word Dictionary Form')
@@ -34,14 +34,14 @@ describe('takes user to target route', {:type => :feature}) do
     click_link('Back to word list')
     expect(page).to have_content('bat')
   end
-  it('clicks the word-link and brings user to definition page') do
+  it('clicks the word-link and brings user to word list page') do
     fill_in('word_entry', :with => "happy")
     click_button("Submit Word")
     expect(page).to have_content('happy')
     click_link("happy")
     expect(page).to have_content('Definitions for the')
-    click_link('Create new word')
-    expect(page).to have_content('Word Dictionary Form')
+    click_link('Back to word list')
+    expect(page).to have_content('Your Word List')
   end
   it('clicks the word-link and brings user to definition page') do
     fill_in('word_entry', :with => "joy")
@@ -49,7 +49,7 @@ describe('takes user to target route', {:type => :feature}) do
     expect(page).to have_content('joy')
     click_link("joy")
     expect(page).to have_content('Definitions for the')
-    click_link('Assign a definition')
+    click_link('Assign a new definition')
     expect(page).to have_content('Word Definition Form')
   end
 end

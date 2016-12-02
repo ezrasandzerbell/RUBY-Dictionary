@@ -1,4 +1,16 @@
-<% @words.each do |word| %>
-<a href="/word_definitions/<%= word.id %>"><%= word.get_word %></a>
+
+<div class="panel panel-warning">
+  <div class="panel panel-heading">
+    <h1><center>Your Word List</center></h1>
+  </div>
+  <div class="panel panel-body">
+    <% @words.each do |word| %>
+    <span class="link_font"><center><a href="/word_definitions/<%= word.id %>"><%= word.get_word %></a></center></span>
+    <br>
+    <% end %>
+  </div>
+  <div class="panel panel-footer">
+    <center><a href="/word_form" class="link_font">Create a new word</a></center>
+  </div>
+</div>
 <br>
-<% end %>
