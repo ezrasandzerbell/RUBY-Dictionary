@@ -1,3 +1,7 @@
+body {
+  background-color: lightyellow;
+}
+
 .link_font {
   font-size: 20px;
 }
@@ -19,30 +23,13 @@
   margin-top: 20px;
 }
 
-#center_index_img {
-  margin-top: 25px;
-  margin-bottom: 25px;
-  margin-left: 5%;
-}
-
 .center_text_slightly {
   margin-left: 5%;
-}
-
-body {
-  background-color: lightyellow;
 }
 
 .jumbotron {
   background-color: #FFDA97;
   text-align: center;
-}
-
-#form_icon_format {
-  width: 150px;
-  margin-top: 20px;
-  margin-left: 16%;
-  margin-bottom: 15px;
 }
 
 .form_icon_format2 {
@@ -54,4 +41,17 @@ body {
 
 .resize_menu {
   width: 150px!important;;
+}
+
+#center_index_img {
+  margin-top: 25px;
+  margin-bottom: 25px;
+  margin-left: 5%;
+}
+
+#form_icon_format {
+  width: 150px;
+  margin-top: 20px;
+  margin-left: 16%;
+  margin-bottom: 15px;
 }
