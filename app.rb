@@ -26,5 +26,6 @@ get('/word_definitions/:id') do
 end
 
 get('/word_list') do
+  @words = Word.all
   erb(:word_list)
 end

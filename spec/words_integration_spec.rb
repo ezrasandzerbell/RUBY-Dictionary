@@ -25,4 +25,12 @@ describe('takes user to target route', {:type => :feature}) do
     click_link("cat")
     expect(page).to have_content('cat')
   end
+  it('clicks the word-link and brings user to definition page') do
+    fill_in('word_entry', :with => "bat")
+    click_button("Submit Word")
+    expect(page).to have_content('bat')
+    click_link("bat")
+    expect(page).to have_content('bat')
+    click_link('Back to word list')
+  end
 end
