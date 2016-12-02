@@ -8,6 +8,10 @@ set(:show_exceptions, false)
 describe('takes user to target route', {:type => :feature}) do
   before() do
     visit('/')
+    click_link('Click here to get started')
+  end
+  it('tests click link to get started') do
+    expect(page).to have_content('Word Dictionary Form')
   end
   it('enters word into form and takes user to next page') do
     fill_in('word_entry', :with => "dog")
