@@ -33,4 +33,14 @@ describe(Word) do
       expect(test_word.definitions).to(eq(["building block of language"]))
     end
   end
+  describe('#find') do
+    it('finds word based on id') do
+      Word.clear
+      test_word = Word.new("word")
+      test_word.save
+      test_word2 = Word.new("guitar")
+      test_word2.save
+      expect(Word.find(2)).to(eq(test_word2))
+    end
+  end
 end
