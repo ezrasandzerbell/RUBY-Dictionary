@@ -1,12 +1,7 @@
 class Definition
-  define_method(:initialize) do |definition, pos|
-    @definition = definition
-    @pos = pos
-  end
-  define_method(:word) do
-    @definition
-  end
-  define_method(:pos) do
-    @pos
+  attr_reader(:definition, :pos)
+  define_method(:initialize) do |attributes|
+    @definition = attributes.fetch(:definition)
+    @pos = attributes.fetch(:pos)
   end
 end
