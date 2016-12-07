@@ -25,4 +25,12 @@ describe(Word) do
       expect(Word.all).to(eq([]))
     end
   end
+  describe('#save_definition') do
+    it('tests for saving and retrieving definition of Word Class instance') do
+      Word.clear
+      test_word = Word.new("word")
+      test_word.save_definition("building block of language")
+      expect(test_word.definitions).to(eq(["building block of language"]))
+    end
+  end
 end
