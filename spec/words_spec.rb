@@ -18,4 +18,11 @@ describe(Word) do
       expect(Word.all).to(eq([test_word1, test_word2]))
     end
   end
+  describe('.clear') do
+    it('tests for clearing class variable all from Word Class') do
+      test_word13 = Word.new("word")
+      Word.clear()
+      expect(Word.all).to(eq([]))
+    end
+  end
 end
